@@ -45,4 +45,6 @@ img varchar(80)
 
 ## if not comfortable making schema just check the dump folder which has data and schema
 
-#run npm install in root of both project
+#run npm install in root of both folders
+
+#run npm start in both folders
