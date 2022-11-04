@@ -15,26 +15,7 @@ There are two folder structure in this project
 
 ## Configurations
 
-please edit the configuration file in api folder -> db.js this should look like this
-
-export const db = mysql.createConnection({
-
-host: "localhost",
-
-user: "root",
-
-password: "password",
-
-database: "blog",
-
-});
-change your mysql database user and password accordingly and don't forget to make a blog database
-
-also install the dotenv package from npm and make a .env file in your root folder and save the details of your rapidApi like this
-
-rapidAPI = your api key
-
-rapidAPIHOST = your host
+Please edit the .env from in api folder
 
 descriptionurl = https://apidojo-booking-v1.p.rapidapi.com/properties/get-description
 
