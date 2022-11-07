@@ -17,14 +17,18 @@ const Property = () => {
   const [room, setRoom] = useState(0);
   const [show, setShow] = useState(false);
 
-  async function getdescriptions(id) {
+async function getdescriptions(id) {
     setDescription("");
     try {
       console.log("i am here");
       console.log("this is id", id);
       const description = await axios.get(`/posts/description/${id}`);
       console.log(description.data);
-      setDescription(description.data);
+      if (description.data === "") {
+        setDescription("no data found");
+      } else {
+        setDescription(description.data);
+      }
     } catch (error) {
       console.log(error);
     }
